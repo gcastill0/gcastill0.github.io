@@ -1,60 +1,24 @@
-Imagine an end-user, an operator, or developer, or general cloud practitioner who requires a new compute-resource allocated. More specifically, the end-user needs a Web server to confirm the function of a simple startup script.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lorenz 1</title>
+	
+	<style type="text/css">
+		html, body {
+			margin: 0px;
+		}
+		canvas {
+			display: block;
+		}
+	</style>
 
-From an ideal point of view, to build the new resource, the end-user needs access to the governing network and the standard guidelines inherited from its parent organization. In other words, the new resource requires a parent network, a local in a subnetwork and a firewall rule to facilitate the test procedure. In some cases, that may indicate a full stack deployment or just subsequent parts into an existing environment. 
+	<script type="text/javascript" src="chaos.js"></script>
+	<script type="text/javascript" src="lorenz1.js"></script>
 
-Terraform Enterprise helps you create independent modules that can manage the technical association, service procurement and infrastructure build of all of these components in an orderly fashion. In this example, we are showing you four, independent modules to fulfill the backbone functions to promote a self-service model for the end users.
-
-The availability of self-service modules means that the end-users do not write code but consume vetted deployment recipes provided by an infrastructure team. Those recipes include best practices, policies and rules which guide the end-users when they procure new infrastructure. 
-
-Instead of writing code, the end-users are responsible for providing subject information such as the names, descriptions, feature flags and values to create new resources. In this example, the end-user would have to provide a name for a new VPC network, a conditional "true" or "false" statement to confirm or deny the auto-creation delegate subnetworks, and a description for the new VPC network.
-
-For this exercise, we advertise the required module components to build a complete stack, but it must clear that not all end users need to build them from the ground up. Terraform Enterprise manages the overlap of existing infrastructure against new resources and coordinates according to the known state of the target environment.
-
-In the Terraform Enterprise user interface, you can add the modules by referencing your preferred VCS (version control system). In this practical example, we configured a secure integration with a Github organization. Adding the modules is a matter of browsing the existing VCS repositories and then publishing the modules privately.
-
-Notice that in the definition of the VPC network module there are matching input requirements for the end users. In this case, only the VPC network name is a required input as the other two have default values defined in the module configuration. Remember: end-users do write code, and instead, they are responsible for providing the appropriate information to facilitate the environment build.
-
-Once the modules are configured, we use the Configuration Designer to combine the modules to fulfill the requirements of the end user request. In this example, we build the entire stack which includes a brand new VPC network, a subnetwork, a firewall rule and a virtual machine. 
-
-However, in a real-life scenario, you may only need a piece of the stack to fulfill the end-user requirement. For example, you may delegate responsibilities using teams. If your end user is part of a test team, they may already fall into a default VPC network, with a designated private subnet - which, by the way, may contain defaulted firewall rules.
-
-So, let's build a new deployment configuration to build a new stack. Notice that we can combine different versions between the modules to match specific feature-functions, or to maintain compatibility between modules. We use VCS tagging to main versions of your modules' code.
-
-You have a variety of choices to fill in the values of the variables in the module's form. You need to complete all of the required variables in the modules to generate the final configuration code.
-
-In some cases, some of the information may not be immediately apparent within the context of the module alone. In this example, a new network subnet references an existing VPC network. In such cases, you refer the output from other modules. So, we use a special referential notation to populate the VPC network name based in the module "network-subnet," and the value derives from the module "network." 
-
-The referential model allows you to use the output from modules to populate inferred values. After all, the network subnet needs to be activated inside a known VPC network. This type of nesting is an excellent example of a best practice, enforced by an infrastructure team, and hidden from the self-service consumers.
-
-In other cases, we can assign a deferred flag to a required variable. Then we assume that the values for the variables already exist as part of the final code. In this example, our workspace contains some pre-defined variables, with values, which are consumed by the final code for this exercise. In other words, the final configuration can securely obtain default values directly from the Terraform Enterprise workspace, without exposing the default values for the variables.
-
-With the final auto-generated code, we have a final recipe for the self-service product that your end-users consume. That final product resides in a private VCS repository, securely integrated to a Terraform Enterprise workspace. 
-
-In this example, we have the gcp_infrastructure workspace in Terraform Enterprise, and we have a corresponding VCS repository in Github.
-
-Our repository contains three configuration files: 
-
-  main.tf contains the GCP (Google Cloud Platform) provider
-
-  modules.tf includes the newly generated code
-
-  outputs.tf indicates essential information returned to the end user
-
-We copy the new code into the modules.tf file. So then we update our repository. Oops, we need to save our main file as well (I like to keep dates in releases).
-
-With an update to our VCS repository, we expect that the VCS change triggers a plan in Terraform Enterprise. In the Terraform Enterprise user interface, we observe the planned deliverables and have a chance to review the deliverables. In this workspace, we also have configured the GCP credentials and the GCP project where we intend to land this new set of resources.
-
-OK, before we run the final job, let's prepare our intended target environment. Remember that we expect to deploy four new resources: 
-
-1) a VPC network, 
-
-2) a network subnet, 
-
-3) a firewall rule and 
-
-4) a new virtual machine.
-
-Finally, in the GCP console page, we navigate to confirm the existence of the new resources:  1) Here is the Teck-demo VPC network, 2) The Teck-demo network subnet, 3) Teck-demo-allow, firewall rule and 4) Teck-demo new virtual machine.
-
-By-the-way, if you recall, the initial intent of the operator was to test the functional result of a simple startup script. In checking the final product, using the new virtual machine public IP address, we can see a successful test.
-
+</head>
+<body>
+    <div>
+        <canvas id="canvas"/>
+    </div>
+</body>
+</html>
