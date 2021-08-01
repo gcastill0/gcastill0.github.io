@@ -35,8 +35,8 @@ a {
 
 .card {
     height: 350px;
-    width: 400px;
-    min-width: 250px;
+    width: 350px;
+    min-width: 300px;
     padding: 1.5rem;
     border-radius: 16px;
     background: #17141d;
@@ -50,17 +50,17 @@ a {
     position: relative;
 }
 
-.card:focus-within~.card, .card:hover~.card {
+ /* .card:focus-within~.card, .card:hover~.card {
     transform: translateX(130px);
-}
+} */
 
 .card:hover {
     transform: translateY(-1rem);
 }
 
-.card:not(:first-child) {
+/* .card:not(:first-child) {
     margin-left: -130px;
-}
+}  */
 
 
 .card-header {
