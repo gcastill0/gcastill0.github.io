@@ -13,9 +13,10 @@ a {
 }
 
 .card-list {
-    display: flex;
+    display: grid;
     padding: 3rem;
-    overflow-x: scroll;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .card-list::-webkit-scrollbar {
@@ -36,7 +37,7 @@ a {
 .card {
     height: 350px;
     width: 350px;
-    min-width: 300px;
+    min-width: 350px;
     padding: 1.5rem;
     border-radius: 16px;
     background: #17141d;
