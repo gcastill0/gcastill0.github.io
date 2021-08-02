@@ -123,7 +123,7 @@ a {
 
 
 .card {
-    height: 400px;
+    height: 500px;
     width: 300px;
     min-width: 300px;
     padding: 1.5rem;
@@ -139,18 +139,9 @@ a {
     position: relative;
 }
 
- /* .card:focus-within~.card, .card:hover~.card {
-    transform: translateX(130px);
-} */
-
 .card:hover {
     transform: translateY(-1rem);
 }
-
-/* .card:not(:first-child) {
-    margin-left: -130px;
-}  */
-
 
 .card-header {
     margin-bottom: auto;
@@ -180,37 +171,30 @@ a {
     background-clip: text;
 }
 
-.card-author {
-    margin: 3rem 0 0;
+.card-topic {
+    margin: 1rem 0 0;
     display: grid;
-    grid-template-columns: 75px 1fr;
     align-items: center;
     position: relative;
 }
 
-.author-avatar {
+.topic-avatar {
     grid-area: auto;
     align-self: start;
     position: relative;
     box-sizing: border-box;
 }
 
-.author-avatar img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    filter: grayscale(100%);
-    display: block;
-    overflow: hidden;
-    margin: 16px 10px;
+.topic-avatar img {
+    width: 100px;
 }
 
-.author-name {
+.topic-name {
     grid-area: auto;
     box-sizing: border-box;
 }
 
-.author-name-prefix {
+.topic-name-prefix {
     font-style: normal;
     font-weight: 700;
     color: #7a7a8c;
