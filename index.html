@@ -7,6 +7,39 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
+    <section class="hero">
+      <nav>
+          <ul id="nav-list">
+              <li><a href="#about-me">About me</a></li>
+              <div class="breaker"></div>
+              <li><a href="#projects">Projects</a></li>
+              <div class="breaker"></div>
+              <li><a href="#contact-me">Contact</a></li>
+          </ul>
+          <button class="hamburger" id="hamburger">
+              <i class="fas fa-bars"></i>
+          </button>
+      </nav>
+  </section>
+
+  <section class="sub-section" id="about-me">
+    <div class="information">
+        <h2>About Me</h2>
+        <p>My name is Gilberto. I am an automation and infrastructure specialist with a passion for teaching.</p>
+        
+        <p>I have more than twenty years of experience in the Information Technology field in a wide range of roles including technical support manager, workflow automation specialist, integration developer, infrastructure hardware planner, systems management consultant, data center automation expert, training and enablement, and sales management.</p>
+        <p>Below are some of my projects based on personal interestes or work-related experience. These are organized randomly and cover diverse topics.</p>
+    </div>
+    <div class="headshot-container">
+        <img class="headshot" src="img/gilberto_headshot.jpg" alt="Gilberto's headshot"/>
+    </div>
+</section>
+
+<div class="breaker"></div>
+
+<section class="sub-section-alternative" id="projects">
+
  <section class="card-list">
 
   <article class="card">
@@ -17,33 +50,109 @@
         <div class="card-text">
           <p>The motivation for this exercise is to present a private API service 
              and use the meta data with a private Terraform provider.</p>
-        </div>
+        </div>          
+
         <div class="tags">
+          <a href="https://www.terraform.io/downloads.html">Terraform</a>
+          <a href="https://golang.org/">Golang</a>
+          <a href="https://aws.amazon.com/s3">AWS S3</a>
           <a href="https://github.com/interrupt-software/terraform-provider-hashicups">repo</a>
           <a href="https://learn.hashicorp.com/tutorials/terraform/provider-setup">learn</a>
           <a href="https://www.terraform.io/docs/internals/provider-registry-protocol.html">docs</a>
         </div>
   </article>
 
-
   <article class="card">
-  <header class="card-header">
-    <p>September 2019</p>
-    <h2>Terraform Configuration Designer</h2>
-  </header>
-  <div class="card-text">
-    <p>A 10-minute video demonstration of the Configuration Designer in Terraform Cloud. 
-      It was initially published privately for a customer and it is now available
-      to the general public.</p>
+    <header class="card-header">
+      <p>March 2021</p>
+      <h2>Pipeline Workflow Connections</h2>
+    </header>
+    <div class="card-text">
+      <p>Animated, interactive JavaScript animation to explain connection flows enabled with
+        an Azure DevOps pipeline.</p>
+    </div>
   </div>
-  <div class="tags">
-    <a href="https://www.youtube.com/watch?v=aVatm6CyBRI">Recording</a>
-    <a href="https://www.hashicorp.com/resources/self-service-infrastructure-with-terraform-enterprise">guide</a>
-    <a href="https://www.terraform.io/docs/cloud/registry/design.html">docs</a>
-  </div>
+    
+    <div class="tags">
+      <a href="https://app.terraform.io/">Terraform Cloud</a>
+      <a href="https://azure.microsoft.com/en-us/services/devops">Azure DevOps</a>
+      <a href="https://www.vaultproject.io/">Vault</a>
+      <a href="https://vimeo.com/458289178">Video</a>
+      <a href="#">repo</a>
+      <a href="#">demo</a>
+    </div>
+    
   </article>
+  
+  <article class="card">
+      <header class="card-header">
+        <p>September 2019</p>
+        <h2>Terraform Configuration Designer</h2>
+      </header>
+      <div class="card-text">
+        <p>A 10-minute video demonstration of the Configuration Designer in Terraform Cloud. 
+          It was initially published privately for a customer and it is now available
+          to the general public.</p>
+      </div>
+    </div>
+    
+    <!-- <div>
+    <ul class="list">
+      <li>Terraform Cloud</li>
+      <li>HCL</li>
+      <li>GCP</li>
+    </ul>  
+    </div>
+    
+    <div class="breaker"></div> -->
+    
+      <div class="tags">
+        <a href="https://app.terraform.io/">Terraform Cloud</a>
+        <a href="https://www.terraform.io/docs/language/index.html">HCL</a>
+        <a href="https://cloud.google.com/">GCP</a>
+        <a href="https://vimeo.com/333811872">Video</a>
+        <a href="https://www.hashicorp.com/resources/self-service-infrastructure-with-terraform-enterprise">guide</a>
+        <a href="https://www.terraform.io/docs/cloud/registry/design.html">docs</a>
+      </div>
+      
+  </article>
+    
+  <article class="card">
+    <header class="card-header">
+      <p>May 2021</p>
+      <h2>CSS SVG Animation</h2>
+    </header>
+    <div class="card-text">
+      <p>Inspired by Jeff Delaney's YouTube video on how to Make Awesome SVG Animations with CSS. This animated 
+        SVG illustration is a quick-and-dirty explainer of the Cribl Logstream architecture.</p>
+    </div>
+  </div>
+  
+  <!-- <div>
+  <ul class="list">
+    <li>Terraform Cloud</li>
+    <li>HCL</li>
+    <li>GCP</li>
+  </ul>  
+  </div>
+  
+  <div class="breaker"></div> -->
+  
+    <div class="tags">
+      <a href="https://cribl.io/logstream/">Cribl Logstream</a>
+      <a href="https://www.w3schools.com/css/">CSS</a>
+      <a href="https://github.com/gcastill0/cribl_animation">repo</a>
+      <a href="cribl_animation/index.html">demo</a>
+      <a href="https://www.youtube.com/watch?v=UTHgr6NLeEw ">fireship YouTube</a>
+    </div>
+    
+    </article>
 
  </section>
+
+
+</section>
+
 
 </body>
 </html>
