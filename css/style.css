@@ -79,8 +79,8 @@ li {
 }
 
 .headshot {
-    width: 300px;
-    border-radius: 150px;
+    width: 200px;
+    border-radius: 100px;
     margin-left: 80px;
 }
 
@@ -144,7 +144,8 @@ a {
 }
 
 .card-header {
-    margin-bottom: auto;
+    height: 100px;
+    margin-bottom: 1rem;
 }
 
 .card-header p {
@@ -172,20 +173,22 @@ a {
 }
 
 .card-topic {
-    margin: 1rem 0 0;
+    margin: 0;
+    height: 150px;
     display: grid;
     align-items: center;
     position: relative;
 }
 
 .topic-avatar {
-    grid-area: auto;
+    /* grid-area: auto;
     align-self: start;
     position: relative;
-    box-sizing: border-box;
+    box-sizing: border-box; */
 }
 
 .topic-avatar img {
+    /* vertical-align: text-top; */
     width: 100px;
 }
 
