@@ -168,7 +168,7 @@ function mousePressed() {
 	draw();
 }
 
-function touchStarted() {
+function mousePressed() {
 	if (active === -1) active++;
 	else if (conns[active].complete) active++;
 }
