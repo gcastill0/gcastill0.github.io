@@ -168,6 +168,11 @@ function mousePressed() {
 	draw();
 }
 
+function touchStarted() {
+	if (active === -1) active++;
+	else if (conns[active].complete) active++;
+}
+
 function keyPressed() {
 	if (active === -1) active++;
 	else if (keyCode === RIGHT_ARROW && conns[active].complete) active++;
