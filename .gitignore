@@ -1,0 +1,16 @@
+# MacOS generated files #
+#########################
+.DS_Store
+.DS_Store?
+
+# VS Code generated files #
+###########################
+.vscode
+.vscode?
+
+# The Affinty Designer files #
+# Those are not practically  #
+# required. If you want them #
+# please just ask.           #
+##############################
+*.afdesign
