@@ -12,7 +12,7 @@
                 <g id="Group-3">
                     <path id="Rectangle3" serif:id="Rectangle" d="M969.859,864.181c-0,-14.188 -11.519,-25.706 -25.707,-25.706l-496.637,-0c-14.188,-0 -25.707,11.518 -25.707,25.706l-0,242.471c-0,14.188 11.519,25.707 25.707,25.707l496.637,-0c14.188,-0 25.707,-11.519 25.707,-25.707l-0,-242.471Z" style="fill:none;stroke:#343536;stroke-width:10.28px;"/>
                     <g id="_-----" serif:id="{-…-}">
-                        <text x="583.751px" y="1022.93px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:128px;fill:#1d1f25;">{ … }</text>
+                        <text x="570px" y="1022.93px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:128px;fill:#1d1f25;">{ … }</text>
                     </g>
                 </g>
                 <path id="Rectangle4" serif:id="Rectangle" d="M2074.03,868.348c0,-14.188 -11.518,-25.707 -25.706,-25.707l-479.971,0c-14.188,0 -25.707,11.519 -25.707,25.707l0,238.304c0,14.188 11.519,25.707 25.707,25.707l479.971,-0c14.188,-0 25.706,-11.519 25.706,-25.707l0,-238.304Z" style="fill:none;stroke:#343536;stroke-width:10.28px;"/>
@@ -24,7 +24,7 @@
                     <text x="470.578px" y="800px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:64px;fill:#1d1f25;">Secrets object</text>
                 </g>
                 <g id="Runtime-function">
-                    <text x="1555.42px" y="804.167px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:64px;fill:#1d1f25;">Runtime function</text>
+                    <text x="1555.42px" y="800px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:64px;fill:#1d1f25;">Runtime function</text>
                 </g>
                 <g id="EXECUTION-ENVIRONMENT">
                     <text x="454.015px" y="582.326px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:72px;fill:#1d1f25;">EXECUTION ENVIRONMENT</text>

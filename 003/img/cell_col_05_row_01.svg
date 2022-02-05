@@ -22,16 +22,16 @@
             </g>
         </g>
         <g id="SECRETS-ENGINE">
-            <text x="374.821px" y="733.333px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:72px;fill:#1d1f25;">SECRETS</text>
-            <text x="404.872px" y="820.833px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:72px;fill:#1d1f25;">ENGINE</text>
+            <text x="374.821px" y="730px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:72px;fill:#1d1f25;">SECRETS</text>
+            <text x="404.872px" y="820px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:72px;fill:#1d1f25;">ENGINE</text>
         </g>
         <g id="ACCESS-POLICIES">
-            <text x="1100.14px" y="732.59px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:72px;fill:#1d1f25;">ACCESS</text>
-            <text x="1082.58px" y="820.09px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:72px;fill:#1d1f25;">POLICIES</text>
+            <text x="1100.14px" y="730px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:72px;fill:#1d1f25;">ACCESS</text>
+            <text x="1082.58px" y="820px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:72px;fill:#1d1f25;">POLICIES</text>
         </g>
         <g id="AUTH-ENGINE">
-            <text x="1857.38px" y="733.333px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:72px;fill:#1d1f25;">AUTH</text>
-            <text x="1821.54px" y="820.833px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:72px;fill:#1d1f25;">ENGINE</text>
+            <text x="1857.38px" y="730px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:72px;fill:#1d1f25;">AUTH</text>
+            <text x="1821.54px" y="820px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:72px;fill:#1d1f25;">ENGINE</text>
         </g>
         <path id="Line-2" d="M1606.09,925.253l0.515,28.893l53.23,-0.953l5.141,-0.092l0.184,10.281l-5.14,0.092l-53.227,0.951l0.517,28.897l-67.266,-32.839l66.046,-35.23Z" style="fill:#343536;fill-rule:nonzero;"/>
         <path id="Line-21" serif:id="Line-2" d="M897.759,929.42l0.516,28.893l53.23,-0.953l5.141,-0.093l0.184,10.281l-5.141,0.092l-53.226,0.952l0.517,28.897l-67.266,-32.839l66.045,-35.23Z" style="fill:#343536;fill-rule:nonzero;"/>
