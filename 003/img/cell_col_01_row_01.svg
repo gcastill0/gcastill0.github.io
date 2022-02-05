@@ -21,19 +21,19 @@
         <path id="Line" d="M1247.92,770.833l-0,312.5"
             style="fill:none;stroke:#343536;stroke-width:10.28px;stroke-linecap:square;" />
         <g id="Lambda-Execution-Rol"><text x="620.591px" y="884.587px"
-                style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">Lambda</text>
+                style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:61.696px;fill:#1d1f25;">Lambda</text>
             <text x="596.776px" y="959.587px"
-                style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">Execution</text><text
+                style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:61.696px;fill:#1d1f25;">Execution</text><text
                 x="680.004px" y="1034.59px"
-                style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">Role</text>
+                style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:61.696px;fill:#1d1f25;">Role</text>
         </g>
         <g id="LAMBDA-EXTENSION"><text x="543.857px" y="582.326px"
-                style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:71.978px;fill:#1d1f25;">LAMBDA
+                style="font-family:'Roboto-Heavy', 'Roboto';font-weight:800;font-size:71.978px;fill:#1d1f25;">LAMBDA
                 EXTENSION</text></g>
         <g id="bootstrap-instructio"><text x="1597.49px" y="922.087px"
-                style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">bootstrap</text>
+                style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:61.696px;fill:#1d1f25;">bootstrap</text>
             <text x="1567.32px" y="997.087px"
-                style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">instructions</text>
+                style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:61.696px;fill:#1d1f25;">instructions</text>
         </g>
         <g id="Code">
             <g id="Union_153">
@@ -49,13 +49,13 @@
             </g>
         </g>
         <g id="Secrets-request"><text x="925.631px" y="1489.83px"
-                style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">Secrets</text>
+                style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:61.696px;fill:#1d1f25;">Secrets</text>
             <text x="924.891px" y="1564.83px"
-                style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">request</text>
+                style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:61.696px;fill:#1d1f25;">request</text>
         </g>
         <g id="Account-Label">
             <g id="ACCOUNT-No-1---US-Ea"><text x="583.333px" y="112.5px"
-                    style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:71.978px;fill:#1d1f25;">ACCOUNT
+                    style="font-family:'Roboto-Heavy', 'Roboto';font-weight:800;font-size:71.978px;fill:#1d1f25;">ACCOUNT
                     No 1 - US East
                 </text></g>
             <g id="Group_3">
@@ -78,7 +78,7 @@
             <g id="_1" serif:id="1">
                 <g transform="matrix(0.999848,0.0174524,-0.0174524,0.999848,26.9051,-9.56565)"><text x="561.51px"
                         y="1536.73px"
-                        style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:71.978px;fill:#fff;">1</text>
+                        style="font-family:'Roboto-Heavy', 'Roboto';font-weight:800;font-size:71.978px;fill:#fff;">1</text>
                 </g>
             </g>
         </g>
@@ -90,13 +90,14 @@
             style="fill:#343536;fill-rule:nonzero;" />
         <path id="Path-7" d="M1500,83.333l1000,0"
             style="fill:none;stroke:#343536;stroke-width:12.55px;stroke-linecap:square;" />
-        <g id="Secrets-injection"><text x="2173.55px" y="645.833px"
-                style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">Secr<tspan
-                    x="2309.21px 2344.97px 2370.19px " y="645.833px 645.833px 645.833px ">ets</tspan></text><text
-                x="2157.66px" y="720.833px"
-                style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">inject
-                <tspan x="2326.23px " y="720.833px ">i</tspan>on
-            </text></g>
+        <g id="Secrets-injection">
+            <text x="2173.55px" y="645.833px"
+                style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:61.696px;fill:#1d1f25;">Secrets
+            </text>
+            <text x="2157.66px" y="720.833px"
+                style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:61.696px;fill:#1d1f25;">injection
+            </text>
+        </g>
         <g id="Group-41" serif:id="Group-4">
             <circle id="Oval1" serif:id="Oval" cx="2290.5" cy="1123.86" r="79.784" style="fill:#fff;" />
             <circle id="Oval2" serif:id="Oval" cx="2290.5" cy="1123.86" r="74.643"
@@ -104,7 +105,7 @@
             <g id="_7" serif:id="7">
                 <g transform="matrix(0.999848,0.0174524,-0.0174524,0.999848,20.3935,-39.443)"><text x="2270.06px"
                         y="1148.71px"
-                        style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:71.978px;fill:#fff;">7</text>
+                        style="font-family:'Roboto-Heavy', 'Roboto';font-weight:800;font-size:71.978px;fill:#fff;">7</text>
                 </g>
             </g>
         </g>
