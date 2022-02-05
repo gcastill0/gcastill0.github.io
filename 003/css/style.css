@@ -22,9 +22,9 @@ body {
     min-height: minmax(80vh, 100vh);
     margin: 5% 10% 5% 10%;
     background: var(--main-bg-color);
-    background-image: linear-gradient(90deg, var(--main-bg-color), var(--main-sc-color), var(--main-ac-color));
+    /* background-image: linear-gradient(90deg, var(--main-bg-color), var(--main-sc-color), var(--main-ac-color));
     background-size: 400%;
-    animation: background-animation 30s infinite alternate; 
+    animation: background-animation 30s infinite alternate;  */
     overflow: hidden;
 }
 
@@ -99,6 +99,11 @@ h1 {
     height: 200px;
     opacity: 0.75;
     color: #27292C;
+}
+
+.slide-interactive-box > img {
+    width: 300px;
+    height: 200px;
 }
 
 .slide-interactive-box-h-span-2 {
