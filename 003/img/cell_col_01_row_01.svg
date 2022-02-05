@@ -12,16 +12,16 @@
         </g>
         <path id="Line" d="M1247.92,770.833l-0,312.5" style="fill:none;stroke:#343536;stroke-width:10.28px;stroke-linecap:square;"/>
         <g id="Lambda-Execution-Rol">
-            <text x="620.591px" y="884.587px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">Lambda</text>
-            <text x="596.776px" y="959.587px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">Execution</text>
-            <text x="680.004px" y="1034.59px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">Role</text>
+            <text x="620.591px" y="884.587px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:16px;fill:#1d1f25;">Lambda</text>
+            <text x="596.776px" y="959.587px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:16px;fill:#1d1f25;">Execution</text>
+            <text x="680.004px" y="1034.59px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:16px;fill:#1d1f25;">Role</text>
         </g>
         <g id="LAMBDA-EXTENSION">
             <text x="543.857px" y="582.326px" style="font-family:'Gilmer-Heavy', 'Gilmer';font-weight:800;font-size:71.978px;fill:#1d1f25;">LAMBDA EXTENSION</text>
         </g>
         <g id="bootstrap-instructions">
-            <text x="1597.49px" y="922.087px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">bootstrap</text>
-            <text x="1567.32px" y="997.087px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">instructions</text>
+            <text x="1597.49px" y="922.087px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:16px;fill:#1d1f25;">bootstrap</text>
+            <text x="1567.32px" y="997.087px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:16px;fill:#1d1f25;">instructions</text>
         </g>
         <g id="Code">
             <g id="Union_153">
@@ -31,8 +31,8 @@
             </g>
         </g>
         <g id="Secrets-request">
-            <text x="925.631px" y="1489.83px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">Secrets</text>
-            <text x="924.891px" y="1564.83px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:61.696px;fill:#1d1f25;">request</text>
+            <text x="925.631px" y="1489.83px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:16px;fill:#1d1f25;">Secrets</text>
+            <text x="924.891px" y="1564.83px" style="font-family:'Gilmer-Bold', 'Gilmer';font-weight:700;font-size:16px;fill:#1d1f25;">request</text>
         </g>
         <g id="Account-Label">
             <g id="ACCOUNT-No-1-US-East">
