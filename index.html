@@ -1,221 +1,516 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
+  <head>
+    <!-- <script src="../assets/js/color-modes.js"></script> -->
 
-<body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>gcastill0</title>
 
-    <section class="hero">
-        <nav>
-            <ul id="nav-list">
-                <li><a href="#about-me">About me</a></li>
-                <div class="breaker"></div>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
-    </section>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-    <section class="sub-section" id="about-me">
-        <div class="information">
-            <h2>About Me</h2>
-            <p>My name is Gilberto. I am an automation and infrastructure specialist with a passion for teaching.</p>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
-            <p>I have more than twenty years of experience in the Information Technology field in a wide range of roles
-                including technical support manager, workflow automation specialist, integration developer,
-                infrastructure
-                hardware planner, systems management consultant, data center automation expert, training and enablement,
-                and
-                sales management.</p>
-            <p>Below are some of my projects based on personal interestes or work-related experience. These are
-                organized
-                randomly and cover diverse topics.</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"
+      defer></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+
+  <body>
+
+    <main>
+      <h1 class="visually-hidden">Gilberto Castillo</h1>
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container col-xxl-8">
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+              <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+
+                <svg class="bi me-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="40" height="40" viewBox="0 0 142 158">
+                  <defs>
+                    <path id="a" d="M0 0v158h142V.254z" />
+                  </defs>
+                  <g fill="none" fill-rule="evenodd">
+                    <mask id="b" fill="#fff">
+                      <use xlink:href="#a" />
+                    </mask>
+                    <g mask="url(#b)">
+                      <g transform="translate(76 25)">
+                        <circle cx="38" cy="38" r="38" />
+                        <path fill="#FFF"
+                          d="M37.748 19.002 38 19c-2.85 0-5.553.627-7.978 1.751C24.225 23.32 19 28.822 19 38c0 8.305 4.345 13.601 9.463 16.436a18.898 18.898 0 0 0 9.279 2.562h.021L38 57h.141H38a19.368 19.368 0 0 0 .76-.015c2.419-.089 4.696-.61 6.832-1.561a19.062 19.062 0 0 0 5.841-3.987l13.434 13.436C57.5 72.291 48.545 76 38 76 17.013 76 0 58.987 0 38S17.013 0 38 0c10.574 0 19.543 3.721 26.904 11.164L51.474 24.56C47.69 20.853 43.197 19 38 19l.45.005c-.149-.003-.3-.005-.45-.005l-.21.001h-.042Z" />
+                      </g>
+                    </g>
+                    <g fill="#FFF" mask="url(#b)">
+                      <path
+                        d="M25.08 133.736c.06.06.121.122.184.182l-.185-.182a18.85 18.85 0 0 0 6.864 4.391c5.897 2.275 13.462 2.076 19.936-4.397 5.826-5.826 6.523-12.584 4.948-18.174l-.01-.034a18.846 18.846 0 0 0-4.757-8.414l-.008-.007-.167-.17a19.308 19.308 0 0 0-.441-.428l-.093-.087a18.18 18.18 0 0 0-6.116-3.797l-.135-.05a18.987 18.987 0 0 0-6.61-1.186l.003-13.63a5 5 0 0 1 5.677-4.952c8.03 1.102 15.069 4.678 21.118 10.727 14.797 14.797 14.792 38.794-.013 53.599-14.804 14.804-38.801 14.81-53.599.012C4.221 139.683.522 130.735.582 120.293l18.919.02c.054 5.284 1.914 9.759 5.578 13.423Z" />
+                      <path
+                        d="m47.846-.224 17.308 7.71-9.773 21.96c12.392 6.232 20.895 19.068 20.895 33.89 0 20.936-16.965 37.909-37.891 37.909-20.927 0-37.892-16.973-37.892-37.91 0-20.272 15.906-36.828 35.914-37.857L47.847-.224Zm-9.461 44.605c-10.464 0-18.946 8.487-18.946 18.955 0 10.468 8.482 18.954 18.946 18.954 10.463 0 18.945-8.486 18.945-18.954S48.848 44.38 38.385 44.38Z" />
+                    </g>
+                  </g>
+                </svg>
+
+              </a>
+
+              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                <li>
+                  <a href="#" class="nav-link text-secondary">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                      <use xlink:href="#home" />
+                    </svg>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                      <use xlink:href="#about" />
+                    </svg>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#projects" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                      <use xlink:href="#projects" />
+                    </svg>
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                      <use xlink:href="#contact" />
+                    </svg>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="headshot-container">
-            <img class="headshot" src="img/gilberto_headshot.jpg" alt="Gilberto's headshot" />
+      </nav>
+
+      <div class="vspacer"></div>
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="img/IMG_2573.png" alt="Gilberto Castillo" class="d-block mx-lg-auto img-fluid" width="700"
+              height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Technical education and corporate enablement
+            </h1>
+            <div class="vspacer"></div>
+            <p class="lead">
+              My name is Gilberto. I am an experienced technologist with skills in <strong>front-end
+                development</strong>, <strong>observability
+                practices</strong> and <strong>infrastructure automation</strong>.
+            </p>
+            <p class="lead">
+              I have a passion for teaching and I can help you with <strong>course development</strong>,
+              <strong>hands-on labs</strong>
+              and <strong>interactive explainers</strong>.
+            </p>
+            <div class="vspacer"></div>
+            <div class="d-flex gap-2 d-md-flex mb-3">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"
+                onclick="location.href='#contact'">Contact</button>
+
+              <a href="https://www.linkedin.com/in/gcastill0" class="link-secondary">
+                <button type="button" class="btn btn-outline-secondary d-inline-flex align-items-center">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32"
+                    height="32" viewBox="0 0 16 16" class="bi bi-linkedin">
+                    <defs>
+                      <path id="linkedInMask"
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146Z" />
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                      <mask id="b" fill="none">
+                        <use xlink:href="#a" />
+                      </mask>
+                      <use xlink:href="#a" fill-rule="nonzero" />
+                      <path fill="currentColor" id="linkedInText" fill-rule="nonzero"
+                        d="M4.943 13.394V6.169H2.542v7.225zM3.743 5.182c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016ZM8.651 13.394V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4Z"
+                        mask="url(#b)" />
+                    </g>
+                  </svg>
+                </button>
+              </a>
+
+              <a href="https://github.com/gcastill0" class="link-secondary">
+                <button type="button" class="btn btn-outline-secondary d-inline-flex align-items-center"
+                  data-bs-theme-value="dark">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                </button>
+              </a>
+
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <div class="breaker"></div>
+      <div class="vspacer"></div>
 
-    <section class="sub-section-alternative" id="projects">
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5 border-top" id="about">
+        <div class="px-4 py-5 my-5 text-center">
+          <h1 class="display-5 fw-bold text-body-emphasis">About me</h1>
+          <div class="col-lg-10 mx-auto">
+            <p class="lead mb-4">
+              I have more than twenty years of experience in the Information Technology field in a wide
+              range of roles including technical support manager, workflow automation specialist,
+              integration developer, infrastructure hardware planner, systems management consultant,
+              data center automation, training and enablement, and pre-sales management.
+            </p>
+            <div class="vspacer"></div>
+            <h3>Skills</h3>
+            <p class="lead mb-4">These skills reflect current areas of focus and the main repertoire at
+              the moment:
+            </p>
+          </div>
 
-        <section class="card-list">
+          <div class="vspacer"></div>
 
-            <article class="card">
-                <header class="card-header">
-                    <p>August 2021</p>
-                    <h2>Transit Data Keys</h2>
-                </header>
+          <div class="container">
 
-                <div class="card-topic">
-                    <a class="topic-avatar" href="https://github.com/interrupt-software/vault-transit">
-                        <img src="./img/vault_logo.svg" alt="Vault">
-                    </a>
+            <div class="row">
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <h5>Front-end development</h5>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <i class="bi bi-filetype-js" style="font-size: 2.75rem;"></i>
+                <p><small>JavaScript</small></p>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <i class="bi bi-filetype-html" style="font-size: 2.75rem;"></i>
+                <p><small>HTML</small></p>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <i class="bi bi-filetype-css" style="font-size: 2.75rem;"></i>
+                <p><small>CSS</small></p>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <svg height="50" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Icon">
+                    <rect width="90" height="90" fill="white" />
+                    <g id="figma_logo">
+                      <path id="Vector"
+                        d="M45 45.5C45 42.9804 46.0009 40.5641 47.7825 38.7825C49.5641 37.0009 51.9804 36 54.5 36C57.0196 36 59.4359 37.0009 61.2175 38.7825C62.9991 40.5641 64 42.9804 64 45.5C64 48.0196 62.9991 50.4359 61.2175 52.2175C59.4359 53.9991 57.0196 55 54.5 55C51.9804 55 49.5641 53.9991 47.7825 52.2175C46.0009 50.4359 45 48.0196 45 45.5V45.5Z"
+                        stroke="#1E1E1E" stroke-width="3.5" />
+                      <path id="Vector_2"
+                        d="M26 64.5C26 61.9804 27.0009 59.5641 28.7825 57.7825C30.5641 56.0009 32.9804 55 35.5 55H45V64.5C45 67.0196 43.9991 69.4359 42.2175 71.2175C40.4359 72.9991 38.0196 74 35.5 74C32.9804 74 30.5641 72.9991 28.7825 71.2175C27.0009 69.4359 26 67.0196 26 64.5Z"
+                        stroke="#1E1E1E" stroke-width="3.5" />
+                      <path id="Vector_3"
+                        d="M45 17V36H54.5C57.0196 36 59.4359 34.9991 61.2175 33.2175C62.9991 31.4359 64 29.0196 64 26.5C64 23.9804 62.9991 21.5641 61.2175 19.7825C59.4359 18.0009 57.0196 17 54.5 17H45Z"
+                        stroke="#1E1E1E" stroke-width="3.5" />
+                      <path id="Vector_4"
+                        d="M26 26.5C26 29.0196 27.0009 31.4359 28.7825 33.2175C30.5641 34.9991 32.9804 36 35.5 36H45V17H35.5C32.9804 17 30.5641 18.0009 28.7825 19.7825C27.0009 21.5641 26 23.9804 26 26.5Z"
+                        stroke="#1E1E1E" stroke-width="3.5" />
+                      <path id="Vector_5"
+                        d="M26 45.5C26 48.0196 27.0009 50.4359 28.7825 52.2175C30.5641 53.9991 32.9804 55 35.5 55H45V36H35.5C32.9804 36 30.5641 37.0009 28.7825 38.7825C27.0009 40.5641 26 42.9804 26 45.5Z"
+                        stroke="#1E1E1E" stroke-width="3.5" />
+                    </g>
+                  </g>
+                </svg>
+                <p><small>Figma</small></p>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg height="50" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.53731 0.826873C7.5125 0.824392 7.4875 0.824392 7.46269 0.826873L3.96269 1.17687C3.85672 1.18747 3.76025 1.24262 3.69736 1.32857L0.699771 5.42528C0.654046 5.48627 0.62647 5.56165 0.625057 5.6434C0.625019 5.6456 0.625 5.64781 0.625 5.65001C0.625 5.65052 0.625001 5.65103 0.625003 5.65153C0.625363 5.74237 0.658021 5.82559 0.712087 5.8903L7.21042 13.7883C7.28165 13.8749 7.38789 13.925 7.5 13.925C7.61211 13.925 7.71835 13.8749 7.78958 13.7883L14.2879 5.89031C14.342 5.8256 14.3746 5.74237 14.375 5.65153C14.375 5.65103 14.375 5.65052 14.375 5.65001C14.375 5.64849 14.375 5.64697 14.375 5.64545C14.3749 5.63963 14.3747 5.63382 14.3744 5.62801C14.37 5.55219 14.3431 5.48242 14.3002 5.42527L11.3026 1.32857C11.2397 1.24262 11.1433 1.18747 11.0373 1.17687L7.53731 0.826873ZM10.925 5.27501V5.25236L10.9223 5.27501H10.925ZM10.9342 5.17498H13.1877L11.2495 2.5261L10.9342 5.17498ZM10.5707 1.88395L8.04432 1.63131L10.1747 5.21034L10.5707 1.88395ZM6.95568 1.63131L4.42931 1.88395L4.82531 5.21034L6.95568 1.63131ZM3.75046 2.5261L1.81226 5.17498H4.0658L3.75046 2.5261ZM1.79416 6.02501L6.75861 12.0587L4.22371 6.0669C4.21787 6.0531 4.21314 6.0391 4.20949 6.02501H1.79416ZM5.15055 6.02501L7.49999 12.1085L9.84943 6.02501H9.78681H5.21319H5.15055ZM10.7905 6.02501C10.7869 6.0391 10.7821 6.0531 10.7763 6.0669L8.24139 12.0587L13.2058 6.02501H10.7905ZM7.5 2.18317L9.34038 5.27501H5.65962L7.5 2.18317Z"
+                    fill="#000000" />
+                </svg>
+                <p><small>Sketch</small></p>
+              </div>
+            </div>
+
+            <div class="vspacer"></div>
+            <hr class="hr hr-blurry" />
+            <div class="vspacer"></div>
+
+            <div class="row">
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <h5>Observability</h5>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="50"
+                  style="enable-background:new 0 0 115.28 122.88" viewBox="0 0 115.28 122.88">
+                  <path
+                    d="M25.38 57h64.88V37.34H69.59c-2.17 0-5.19-1.17-6.62-2.6-1.43-1.43-2.3-4.01-2.3-6.17V7.64H8.15c-.18 0-.32.09-.41.18-.15.1-.19.23-.19.42v106.45c0 .14.09.32.18.41.09.14.28.18.41.18h81.51c.18 0 .17-.09.27-.18.14-.09.33-.28.33-.41v-11.16H25.38c-4.14 0-7.56-3.4-7.56-7.56V64.55c0-4.15 3.4-7.55 7.56-7.55zm4.11 11.38h7.43v18.15h11.63v5.92H29.49V68.38zm20.4 12.05c0-3.93 1.09-6.99 3.28-9.17 2.19-2.19 5.24-3.28 9.15-3.28 4.01 0 7.09 1.08 9.26 3.22 2.17 2.15 3.25 5.16 3.25 9.04 0 2.81-.47 5.11-1.42 6.91-.95 1.8-2.32 3.2-4.11 4.2-1.79 1-4.02 1.5-6.69 1.5-2.71 0-4.96-.43-6.74-1.29-1.78-.87-3.22-2.23-4.32-4.11-1.11-1.87-1.66-4.21-1.66-7.02zm7.42.01c0 2.43.45 4.17 1.36 5.23.91 1.06 2.14 1.59 3.7 1.59 1.6 0 2.84-.52 3.71-1.56.88-1.04 1.32-2.9 1.32-5.6 0-2.26-.46-3.92-1.37-4.96-.92-1.05-2.16-1.57-3.73-1.57-1.5 0-2.71.53-3.62 1.59-.91 1.08-1.37 2.83-1.37 5.28zm33.11 3.3v-5.01h11.49v10.23c-2.2 1.5-4.15 2.53-5.83 3.07-1.69.54-3.7.81-6.02.81-2.86 0-5.19-.49-6.99-1.46-1.8-.97-3.19-2.42-4.18-4.35-.99-1.92-1.48-4.13-1.48-6.63 0-2.63.54-4.91 1.62-6.85 1.08-1.94 2.67-3.41 4.76-4.42 1.63-.78 3.83-1.17 6.58-1.17 2.66 0 4.64.24 5.96.72 1.32.48 2.41 1.23 3.28 2.24.87 1.01 1.52 2.3 1.96 3.85l-7.16 1.29c-.3-.91-.8-1.61-1.5-2.09-.71-.49-1.6-.73-2.7-.73-1.62 0-2.92.57-3.89 1.7-.97 1.13-1.45 2.92-1.45 5.37 0 2.6.49 4.46 1.47 5.57.97 1.11 2.34 1.68 4.09 1.68.83 0 1.62-.12 2.37-.36s1.61-.65 2.59-1.22v-2.25h-4.97v.01zM97.79 57h9.93c4.16 0 7.56 3.41 7.56 7.56v31.42c0 4.15-3.41 7.56-7.56 7.56h-9.93v13.55c0 1.61-.65 3.04-1.7 4.1a5.74 5.74 0 0 1-4.1 1.7H5.81a5.74 5.74 0 0 1-4.1-1.7 5.74 5.74 0 0 1-1.7-4.1V5.85c0-1.61.65-3.04 1.7-4.1a5.81 5.81 0 0 1 4.1-1.7h58.72c.13-.05.27-.05.41-.05.64 0 1.29.28 1.75.69h.09c.09.05.14.09.23.18L97 31.23c.51.51.88 1.2.88 1.98 0 .23-.05.41-.09.65V57zM67.52 27.97V8.94l21.43 21.7H70.19c-.74 0-1.38-.32-1.89-.78-.46-.46-.78-1.15-.78-1.89z"
+                    style="fill-rule:evenodd;clip-rule:evenodd" />
+                </svg>
+                <p><small>Logs</small></p>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="50" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M6 13.5V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 9.75V10.5" />
+                </svg>
+                <p><small>Metrics</small></p>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="50" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                </svg>
+                <p><small>IOCs</small></p>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="50" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
+                </svg>
+                <p><small>Alarms</small></p>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="50" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+                <p><small>Dashboards</small></p>
+              </div>
+            </div>
+
+            <div class="vspacer"></div>
+            <hr class="hr hr-blurry" />
+            <div class="vspacer"></div>
+
+            <div class="row">
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <h5>Infrastructure automation</h5>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <i class="bi bi-terminal" style="font-size: 2.75rem;"></i>
+                <p><small>Terminal</small></p>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <i class="bi bi-ubuntu" style="font-size: 2.75rem;"></i>
+                <p><small>Linux</small></p>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <i class="bi bi-git" style="font-size: 2.75rem;"></i>
+                <p><small>Git</small></p>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <i class="bi bi-file-earmark-diff" style="font-size: 2.75rem;"></i>
+                <p><small>IaC</small></p>
+              </div>
+              <div class="col-sm d-flex flex-column align-items-center justify-content-center">
+                <i class="bi bi-cloud" style="font-size: 2.75rem;"></i>
+                <p><small>Cloud</small></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="vspacer"></div>
+
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5 border-top" id="projects">
+        <div class="px-4 py-5 my-5 text-center">
+          <h1 class="display-5 fw-bold text-body-emphasis">Projects</h1>
+          <div class="col-lg-7 mx-auto">
+            <p class="lead mb-4">Here are recent and relevant projects focused on personal interests and work-related
+              teaching experiences.</p>
+          </div>
+        </div>
+
+        <div class="album py-5 bg-body-tertiary">
+
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="projects-wrapper">
+              <!-- 
+              <div class="col">
+                <div class="card shadow-sm">
+                  <div class="card-header">Terraform provider</div>
+                  <div class="project_img">
+                    <img src="img/terraform_logo.svg" class="img-fluid rounded-start center-block" alt="Terraform">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Build a Terraform provider</h5>
+                    <p class="card-text">
+                      Reference API meta data with a private Terraform Provider hosted in AWS S3
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Learn</button>
+                        </a>
+                        <a>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Repo</button>
+                        </a>
+                        <a>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Demo</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div> -->
 
-                <div class="card-text">
-                    <p>Generate a high-entropy data key from the Transit Secrets Engine to support external offline
-                        operations.</p>
-                </div>
+            </div>
+          </div>
+        </div>
 
-                <div class="tags">
-                    <a href="https://www.vaultproject.io/downloads">Vault</a>
-                    <a href="https://pycryptodome.readthedocs.io/en/latest/src/cipher/cipher.html">Python Crypto</a>
-                    <a href="https://hvac.readthedocs.io/en/stable/usage/index.html">HVAC</a>
-                    <a href="https://learn.hashicorp.com/tutorials/vault/eaas-transit">learn</a>
-                    <a href="https://www.vaultproject.io/api/secret/transit#generate-data-key">docs</a>
-                    <a href="https://github.com/interrupt-software/vault-transit">repo</a>
-                </div>
-            </article>
+      </div>
 
-            <article class="card">
-                <header class="card-header">
-                    <p>December 2020</p>
-                    <h2>Private Terraform Provider</h2>
-                </header>
+      <div class="vspacer"></div>
 
-                <div class="card-topic">
-                    <a class="topic-avatar" href="https://github.com/interrupt-software/terraform-provider-hashicups">
-                        <img src="./img/terraform_logo.svg" alt="Terraform">
-                    </a>
-                </div>
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5 border-top" id="contact">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Contact me</h1>
+            <div class="vspacer"></div>
+            <p class="lead">
+              Do you want to discuss something more in-depth? Or, is there a creative,
+              educational endeavour you wish to explore?</p>
 
-                <div class="card-text">
-                    <p>The motivation for this exercise is to present a private API service
-                        and use the meta data with a private Terraform provider.</p>
-                </div>
+            <p class="lead">I can help you with <strong>course development</strong>,
+              <strong>hands-on labs</strong> and <strong>interactive explainers</strong>.
+            </p>
 
-                <div class="tags">
-                    <a href="https://www.terraform.io/downloads.html">Terraform</a>
-                    <a href="https://golang.org/">Golang</a>
-                    <a href="https://aws.amazon.com/s3">AWS S3</a>
-                    <a href="https://learn.hashicorp.com/tutorials/terraform/provider-setup">learn</a>
-                    <a href="https://www.terraform.io/docs/internals/provider-registry-protocol.html">docs</a>
-                    <a href="https://github.com/interrupt-software/terraform-provider-hashicups">repo</a>
-                </div>
-            </article>
+            <p class="lead">Send me a note and let&apos;s have a chat soon.</p>
 
-            <article class="card">
-                <header class="card-header">
-                    <p>March 2021</p>
-                    <h2>Pipeline Workflow Connections</h2>
-                </header>
+            </p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary"
+              action="https://formsubmit.co/gilberto.castillo@rogers.com" method="POST">
 
-                <div class="card-topic">
-                    <a class="topic-avatar" href="/002/index.html">
-                        <img src="./img/azdevops_logo.svg" alt="Azure DevOps">
-                    </a>
-                </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Please leave your name">
+                <label for="floatingPassword">Please leave your name</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Please enter your email">
+                <label for="floatingInput">Please enter your email</label>
+              </div>
 
 
-                <div class="card-text">
-                    <p>Interactive JavaScript animation using p5js to explain connection flows enabled with
-                        an Azure DevOps pipeline.</p>
-                </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" name="message" id="message" aria-label="With textarea"
+                  placeholder="Your message here" rows="5"></textarea>
+              </div>
 
-                <div class="tags">
-                    <a href="https://app.terraform.io/">Terraform Cloud</a>
-                    <a href="https://azure.microsoft.com/en-us/services/devops">Azure DevOps</a>
-                    <a href="https://www.vaultproject.io/">Vault</a>
-                    <a href="https://p5js.org/">p5js</a>
-                    <a href="https://vimeo.com/458289178">Video</a>
-                    <a href="/002/index.html">demo</a>
-                </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- 
+      <div class="b-example-divider"></div>
 
-            </article>
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Border hero with cropped image and shadows</h1>
+            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
+              popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+              extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+            <img class="rounded-lg-3" src="bootstrap-docs.png" alt="" width="720">
+          </div>
+        </div>
+      </div>
 
-            <article class="card">
-                <header class="card-header">
-                    <p>September 2019</p>
-                    <h2>Terraform Configuration Designer</h2>
-                </header>
+      <div class="b-example-divider"></div>
 
-                <div class="card-topic">
-                    <a class="topic-avatar" href="https://vimeo.com/333811872">
-                        <img src="./img/terraform_logo.svg" alt="Terraform">
-                    </a>
-                </div>
+      <div class="bg-dark text-secondary px-4 py-5 text-center">
+        <div class="py-5">
+          <h1 class="display-5 fw-bold text-white">Dark color hero</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+              most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+              extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
+              <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-example-divider mb-0"></div> -->
 
-                <div class="card-text">
-                    <p>A 10-minute video demonstration of the Configuration Designer in Terraform Cloud.
-                        Initially published privately and now available to the general public.</p>
-                </div>
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 gcastill0</p>
 
-                <div class="tags">
-                    <a href="https://app.terraform.io/">Terraform Cloud</a>
-                    <a href="https://www.terraform.io/docs/language/index.html">HCL</a>
-                    <a href="https://cloud.google.com/">GCP</a>
-                    <a href="https://vimeo.com/333811872">Video</a>
-                    <a
-                        href="https://www.hashicorp.com/resources/self-service-infrastructure-with-terraform-enterprise">guide</a>
-                    <a href="https://www.terraform.io/docs/cloud/registry/design.html">docs</a>
-                </div>
+          <a href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="40" height="40" viewBox="0 0 142 158">
+              <defs>
+                <path id="a" d="M0 0v158h142V.254z" />
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <mask id="b" fill="currentColor">
+                  <use xlink:href="#a" />
+                </mask>
+                <g mask="url(#b)">
+                  <g transform="translate(76 25)">
+                    <circle cx="38" cy="38" r="38" />
+                    <path fill="currentColor"
+                      d="M37.748 19.002 38 19c-2.85 0-5.553.627-7.978 1.751C24.225 23.32 19 28.822 19 38c0 8.305 4.345 13.601 9.463 16.436a18.898 18.898 0 0 0 9.279 2.562h.021L38 57h.141H38a19.368 19.368 0 0 0 .76-.015c2.419-.089 4.696-.61 6.832-1.561a19.062 19.062 0 0 0 5.841-3.987l13.434 13.436C57.5 72.291 48.545 76 38 76 17.013 76 0 58.987 0 38S17.013 0 38 0c10.574 0 19.543 3.721 26.904 11.164L51.474 24.56C47.69 20.853 43.197 19 38 19l.45.005c-.149-.003-.3-.005-.45-.005l-.21.001h-.042Z" />
+                  </g>
+                </g>
+                <g fill="currentColor" mask="url(#b)">
+                  <path
+                    d="M25.08 133.736c.06.06.121.122.184.182l-.185-.182a18.85 18.85 0 0 0 6.864 4.391c5.897 2.275 13.462 2.076 19.936-4.397 5.826-5.826 6.523-12.584 4.948-18.174l-.01-.034a18.846 18.846 0 0 0-4.757-8.414l-.008-.007-.167-.17a19.308 19.308 0 0 0-.441-.428l-.093-.087a18.18 18.18 0 0 0-6.116-3.797l-.135-.05a18.987 18.987 0 0 0-6.61-1.186l.003-13.63a5 5 0 0 1 5.677-4.952c8.03 1.102 15.069 4.678 21.118 10.727 14.797 14.797 14.792 38.794-.013 53.599-14.804 14.804-38.801 14.81-53.599.012C4.221 139.683.522 130.735.582 120.293l18.919.02c.054 5.284 1.914 9.759 5.578 13.423Z" />
+                  <path
+                    d="m47.846-.224 17.308 7.71-9.773 21.96c12.392 6.232 20.895 19.068 20.895 33.89 0 20.936-16.965 37.909-37.891 37.909-20.927 0-37.892-16.973-37.892-37.91 0-20.272 15.906-36.828 35.914-37.857L47.847-.224Zm-9.461 44.605c-10.464 0-18.946 8.487-18.946 18.955 0 10.468 8.482 18.954 18.946 18.954 10.463 0 18.945-8.486 18.945-18.954S48.848 44.38 38.385 44.38Z" />
+                </g>
+              </g>
+            </svg>
+          </a>
 
-            </article>
-
-            <article class="card">
-                <header class="card-header">
-                    <p>May 2021</p>
-                    <h2>CSS SVG Animation</h2>
-                </header>
-
-                <div class="card-topic">
-                    <a class="topic-avatar" href="/001/index.html">
-                        <img src="./img/css3_logo.svg" alt="CSS">
-                    </a>
-                </div>
-
-
-                <div class="card-text">
-                    <p>Inspired by Jeff Delaney's guide on how to Make Awesome SVG Animations with CSS. This experiment
-                        is a quick explainer of the Cribl Logstream architecture.</p>
-                </div>
-
-                <div class="tags">
-                    <a href="https://cribl.io/logstream/">Cribl Logstream</a>
-                    <a href="https://www.w3schools.com/css/">CSS</a>
-                    <a href="https://github.com/gcastill0/cribl_animation">repo</a>
-                    <a href="https://www.youtube.com/watch?v=UTHgr6NLeEw ">fireship YouTube</a>
-                    <a href="/001/index.html">demo</a>
-                </div>
-
-            </article>
-
-            <article class="card">
-                <header class="card-header">
-                    <p>January 2022</p>
-                    <h2>HCP Vault Hub & Spoke</h2>
-                </header>
-
-                <div class="card-topic">
-                    <a class="topic-avatar" href="/003/index.html">
-                        <img src="./img/vault_logo.svg" alt="Vault">
-                    </a>
-                </div>
-
-                <div class="card-text">
-                    <p>A high-level overview of HCP Vault in a Hub and Spoke topology</p>
-                </div>
-
-                <div class="tags">
-                    <a href="https://cloud.hashicorp.com/products/vault">HCP Vault</a>
-                    <a href="https://learn.hashicorp.com/tutorials/cloud/amazon-transit-gateway">learn</a>
-                    <a href="https://cloud.hashicorp.com/docs/vault">docs</a>
-                    <a href="https://github.com/interrupt-software/hcp-vault-explainer">repo</a>
-                </div>
-            </article>
-
-        </section>
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Projects</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+          </ul>
+        </footer>
+      </div>
 
 
-    </section>
+    </main>
 
 
-</body>
+    <script src="/js/main.js"></script>
+
+
+  </body>
 
 </html>
