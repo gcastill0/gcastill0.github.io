@@ -214,3 +214,47 @@ projects.forEach(project_data => {
     project_wrapper.appendChild(project_col_div)
 
 })
+
+
+const headerNavLinks = document.querySelectorAll('nav a')
+const footerNavLinks = document.querySelectorAll('footer ul li a')
+
+var activePage
+getActiveLink()
+
+headerNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (activePage != link) {
+            setActiveLink(link)
+        }
+    })
+})
+
+footerNavLinks.forEach(link => {
+
+    link.addEventListener('click', () => {
+        if (activePage.href != link.href) {
+            setActiveLink(link)
+        }
+    })
+})
+
+function getActiveLink() {
+    headerNavLinks.forEach(link => {
+        if (link.classList.contains('active')) {
+            activePage = link
+        }
+    })
+}
+
+function setActiveLink(activeLink) {
+    getActiveLink()
+    headerNavLinks.forEach(link => {
+        if (link.href == activeLink.href) {
+            activePage.classList.remove('text-secondary', 'active')
+            activePage.classList.add('text-white')
+            link.classList.remove('text-white')
+            link.classList.add('text-secondary', 'active')
+        }
+    })
+}
