@@ -122,14 +122,14 @@ const projects = [
     },
     {
         "id": "peter-djong-map",
-        "avatar": "img/ga-2017-09-19-16-12-11-000079200.png",
+        "avatar": "img/ga-2017-09-19-16-12-11-000079200.svg",
         "title": "Peter de Jong Attractor",
         "date": "Sep 2017",
-        "description": "Frame by frame capture of a chaotic system using Peter Bourke's constants",
+        "description": "Frame by frame capture of Peter de Jong's chaotic system using Peter Bourke's constants",
         "tags": [
             {
                 "name": "Docs",
-                "link": "https://www.algosome.com/articles/strange-attractors-de-jong.html"
+                "link": "http://paulbourke.net/fractals/peterdejong/"
             },
             {
                 "name": "Repo",
@@ -161,105 +161,122 @@ const projects = [
 
 ]
 
-const project_wrapper = document.getElementById("projects-wrapper")
+window.onload = function () {
+    const parser = new DOMParser();
 
-projects.forEach(project_data => {
+    async function fetchSVG(svg_name) {
+        const response = await fetch(svg_name);
+        const svgText = await response.text();
+        const svgDoc = parser.parseFromString(svgText, 'text/xml');
+        return svgDoc;
+    }
 
-    const project_col_div = document.createElement("div")
-    const project_card_div = document.createElement("div")
-    const project_card_header = document.createElement("div")
-    const project_project_img_wrapper = document.createElement("div")
-    const project_project_img = document.createElement("img")
-    const project_card_body = document.createElement("div")
-    const project_card_title = document.createElement("h5")
-    const project_card_text = document.createElement("p")
-    const project_card_tags = document.createElement("div")
-    const project_card_tags_group = document.createElement("div")
+    const project_wrapper = document.getElementById("projects-wrapper")
 
-    project_col_div.classList.add("col")
-    project_card_div.classList.add("card", "shadow-sm", "h-100")
-    project_card_header.classList.add("card-header")
-    project_project_img_wrapper.classList.add("project_img")
-    project_project_img.classList.add("img-fluid", "rounded-start", "center-block")
-    project_card_body.classList.add("card-body")
-    project_card_title.classList.add("card-title")
-    project_card_text.classList.add("card-text")
+    projects.forEach(project_data => {
 
-    project_card_header.innerHTML = project_data.date
-    project_card_text.innerHTML = project_data.description
-    project_project_img.src = project_data.avatar
+        const project_col_div = document.createElement("div")
+        const project_card_div = document.createElement("div")
+        const project_card_header = document.createElement("div")
+        const project_project_img_wrapper = document.createElement("div")
+        const project_project_img = document.createElement("div")
+        const project_card_body = document.createElement("div")
+        const project_card_title = document.createElement("h5")
+        const project_card_text = document.createElement("p")
+        const project_card_tags = document.createElement("div")
+        const project_card_tags_group = document.createElement("div")
 
-    project_card_tags.classList.add("d-flex", "justify-content-between", "align-items-center")
-    project_card_tags_group.classList.add("btn-group")
+        project_col_div.classList.add("col")
+        project_card_div.classList.add("card", "shadow-sm", "h-100")
+        project_card_header.classList.add("card-header")
+        project_project_img_wrapper.classList.add("project_img")
+        project_project_img.classList.add("img-fluid", "rounded-start", "center-block")
+        project_card_body.classList.add("card-body")
+        project_card_title.classList.add("card-title")
+        project_card_text.classList.add("card-text")
 
-    project_data.tags.forEach(tag => {
-        const project_tag = document.createElement("a")
-        const tag_button = document.createElement("button")
-        tag_button.innerHTML = tag.name
-        tag_button.classList.add("btn", "btn-sm", "btn-outline-secondary")
-        project_tag.href = tag.link
-        project_tag.appendChild(tag_button)
-        project_card_tags_group.appendChild(project_tag)
+        project_card_header.innerHTML = project_data.date
+        project_card_text.innerHTML = project_data.description
+
+        fetchSVG(project_data.avatar).then(imageSVG => {
+            project_project_img.appendChild(imageSVG.documentElement);
+            project_project_img_wrapper.appendChild(project_project_img);
+        });
+
+        // project_project_img.src = project_data.avatar
+
+        project_card_tags.classList.add("d-flex", "justify-content-between", "align-items-center")
+        project_card_tags_group.classList.add("btn-group")
+
+        project_data.tags.forEach(tag => {
+            const project_tag = document.createElement("a")
+            const tag_button = document.createElement("button")
+            tag_button.innerHTML = tag.name
+            tag_button.classList.add("btn", "btn-sm", "btn-outline-secondary")
+            project_tag.href = tag.link
+            project_tag.appendChild(tag_button)
+            project_card_tags_group.appendChild(project_tag)
+        })
+
+        project_card_tags.appendChild(project_card_tags_group)
+        // project_project_img_wrapper.appendChild(project_project_img)
+        project_card_body.appendChild(project_card_title)
+        project_card_body.appendChild(project_card_text)
+        project_card_body.appendChild(project_card_tags)
+        project_card_div.appendChild(project_card_header)
+        project_card_div.appendChild(project_project_img_wrapper)
+        project_card_div.appendChild(project_card_body)
+        project_col_div.appendChild(project_card_div)
+        project_wrapper.appendChild(project_col_div)
+
     })
 
-    project_card_tags.appendChild(project_card_tags_group)
-    project_project_img_wrapper.appendChild(project_project_img)
-    project_card_body.appendChild(project_card_title)
-    project_card_body.appendChild(project_card_text)
-    project_card_body.appendChild(project_card_tags)
-    project_card_div.appendChild(project_card_header)
-    project_card_div.appendChild(project_project_img_wrapper)
-    project_card_div.appendChild(project_card_body)
-    project_col_div.appendChild(project_card_div)
-    project_wrapper.appendChild(project_col_div)
 
-})
+    const headerNavLinks = document.querySelectorAll('nav a')
+    const footerNavLinks = document.querySelectorAll('footer ul li a')
 
+    var activePage
 
-const headerNavLinks = document.querySelectorAll('nav a')
-const footerNavLinks = document.querySelectorAll('footer ul li a')
-
-var activePage
-
-headerNavLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        if (activePage != link) {
-            getActiveLink()
-            activePage.classList.remove('text-secondary', 'active')
-            activePage.classList.add('text-white')
-            link.classList.remove('text-white')
-            link.classList.add('text-secondary', 'active')
-            activePage = link
-        }
-    })
-})
-
-footerNavLinks.forEach(link => {
-
-    link.addEventListener('click', () => {
-        if (activePage.href != link.href) {
-            setActiveLink(link)
-        }
-    })
-})
-
-function getActiveLink() {
     headerNavLinks.forEach(link => {
-        if (link.classList.contains('active')) {
-            activePage = link
-        }
+        link.addEventListener('click', () => {
+            if (activePage != link) {
+                getActiveLink()
+                activePage.classList.remove('text-secondary', 'active')
+                activePage.classList.add('text-white')
+                link.classList.remove('text-white')
+                link.classList.add('text-secondary', 'active')
+                activePage = link
+            }
+        })
     })
-}
 
-function setActiveLink(activeLink) {
-    headerNavLinks.forEach(link => {
-        if (link.href == activeLink.href) {
-            getActiveLink()
-            activePage.classList.remove('text-secondary', 'active')
-            activePage.classList.add('text-white')
-            link.classList.remove('text-white')
-            link.classList.add('text-secondary', 'active')
-            activePage = link
-        }
+    footerNavLinks.forEach(link => {
+
+        link.addEventListener('click', () => {
+            if (activePage.href != link.href) {
+                setActiveLink(link)
+            }
+        })
     })
+
+    function getActiveLink() {
+        headerNavLinks.forEach(link => {
+            if (link.classList.contains('active')) {
+                activePage = link
+            }
+        })
+    }
+
+    function setActiveLink(activeLink) {
+        headerNavLinks.forEach(link => {
+            if (link.href == activeLink.href) {
+                getActiveLink()
+                activePage.classList.remove('text-secondary', 'active')
+                activePage.classList.add('text-white')
+                link.classList.remove('text-white')
+                link.classList.add('text-secondary', 'active')
+                activePage = link
+            }
+        })
+    }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="200px" height="100px" viewBox="0 0 20 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg height="100" viewBox="0 0 20 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>size=24_95</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Services" transform="translate(-576.000000, -2151.000000)" fill="#000001" fill-rule="nonzero">
+        <g id="Services" transform="translate(-576.000000, -2151.000000)" fill="currentColor" fill-rule="nonzero">
             <g id="Grid" transform="translate(20.500000, 208.500000)">
                 <g id="Row_16" transform="translate(0.000000, 1920.000000)">
                     <g id="vmware" transform="translate(512.000000, 0.000000)">
