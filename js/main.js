@@ -252,13 +252,14 @@ function getActiveLink() {
 }
 
 function setActiveLink(activeLink) {
-    getActiveLink()
     headerNavLinks.forEach(link => {
         if (link.href == activeLink.href) {
+            getActiveLink()
             activePage.classList.remove('text-secondary', 'active')
             activePage.classList.add('text-white')
             link.classList.remove('text-white')
             link.classList.add('text-secondary', 'active')
+            activePage = link
         }
     })
 }
