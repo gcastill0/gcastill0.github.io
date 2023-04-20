@@ -219,7 +219,6 @@ window.onload = function () {
         })
 
         project_card_tags.appendChild(project_card_tags_group)
-        // project_project_img_wrapper.appendChild(project_project_img)
         project_card_body.appendChild(project_card_title)
         project_card_body.appendChild(project_card_text)
         project_card_body.appendChild(project_card_tags)
@@ -250,7 +249,6 @@ window.onload = function () {
     })
 
     footerNavLinks.forEach(link => {
-
         link.addEventListener('click', () => {
             if (activePage.href != link.href) {
                 setActiveLink(link)
@@ -288,7 +286,6 @@ window.onload = function () {
         })
         return activeHeaderLink
     }
-
 
     const section_names = ["home", "about", "projects", "contact"]
     const sections = []
