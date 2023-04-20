@@ -231,7 +231,6 @@ window.onload = function () {
 
     })
 
-
     const headerNavLinks = document.querySelectorAll('nav a')
     const footerNavLinks = document.querySelectorAll('footer ul li a')
 
@@ -279,4 +278,43 @@ window.onload = function () {
             }
         })
     }
+
+    function getHeaderLink(name) {
+        var activeHeaderLink
+        headerNavLinks.forEach(link => {
+            if (link.href.split("#").pop() === name) {
+                activeHeaderLink = link
+            }
+        })
+        return activeHeaderLink
+    }
+
+
+    const section_names = ["home", "about", "projects", "contact"]
+    const sections = []
+    section_names.forEach(section => {
+        sections.push(document.getElementById(section))
+    })
+
+    const options = {
+        root: null,
+        threshold: 0.5,
+        rootMargin: "100px"
+    }
+
+    const observer = new IntersectionObserver(function (entries, observer) {
+        getActiveLink()
+        entries.forEach(entry => {
+            if (entry.isIntersecting && activePage.href.split("#").pop() != entry.target.id) {
+                const newHeaderLink = getHeaderLink(entry.target.id)
+                setActiveLink(newHeaderLink)
+            }
+        })
+    }, options)
+
+    sections.forEach(section => {
+        observer.observe(section)
+    })
+
+
 }
