@@ -220,12 +220,16 @@ const headerNavLinks = document.querySelectorAll('nav a')
 const footerNavLinks = document.querySelectorAll('footer ul li a')
 
 var activePage
-getActiveLink()
 
 headerNavLinks.forEach(link => {
     link.addEventListener('click', () => {
         if (activePage != link) {
-            setActiveLink(link)
+            getActiveLink()
+            activePage.classList.remove('text-secondary', 'active')
+            activePage.classList.add('text-white')
+            link.classList.remove('text-white')
+            link.classList.add('text-secondary', 'active')
+            activePage = link
         }
     })
 })
