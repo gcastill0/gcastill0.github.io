@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="s1_logo" fill="currentColor">
+            <polygon id="p1" points="">
+                <animate attributeName="points" dur="0.25s" fill="freeze" from="340 575 684 407 684 409 340 577"
+                    to="340 490 684 322 684 494 340 662" />
+                <animate attributeName="points" dur="0.25s" fill="freeze" begin="0.5s"
+                    to="168 489 512 321 512 493 168 661" from="340 490 684 322 684 494 340 662" />
+                <animate attributeName="points" dur="0.25s" fill="freeze" begin="1s"
+                    from="168 489 512 321 512 493 168 661" to="168 232 512 64 512 236 168 404" />
+            </polygon>
+
+            <polygon id="p2" points="">
+                <animate attributeName="points" dur="0.25s" fill="freeze" begin="1.5s"
+                    from="512 64 512 64 512 236 512 236" to="512 64 856 232 856 404 512 236" />
+            </polygon>
+
+            <polygon id="p3" points="">
+                <animate attributeName="points" dur="0.25s" fill="freeze" begin="1s"
+                    from="427 533.97 594.98 451 597 452.06 429.01 535" to="256 450 424 368 768 535 600 618" />
+            </polygon>
+
+            <polygon id="p4" points="">
+                <animate attributeName="points" dur="0.25s" fill="freeze" begin="1.5s"
+                    from="510 747 512 748 512 920 510 919" to="168 580 512 748 512 920 168 752" />
+            </polygon>
+
+            <polygon id="p5" points="">
+                <animate attributeName="points" dur="0.25s" fill="freeze" from="340 575 684 407 684 409 340 577"
+                    to="340 490 684 322 684 494 340 662" />
+                <animate attributeName="points" dur="0.25s" fill="freeze" begin="0.5s"
+                    to="512 491 856 323 856 495 512 663" from="340 490 684 322 684 494 340 662" />
+                <animate attributeName="points" dur="0.25s" fill="freeze" begin="1s"
+                    from="512 491 856 323 856 495 512 663" to="512 748 856 580 856 752 512 920" />
+            </polygon>
+        </g>
+    </g>
+</svg>

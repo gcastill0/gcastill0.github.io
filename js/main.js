@@ -1,6 +1,24 @@
 const projects = [
     {
         "id": "hcp-vault",
+        "avatar": "img/s1_logo_dark.svg",
+        "title": "Extrahop Data Store",
+        "date": "Sep 2024",
+        "description": "A series of programmatic options to export Extrahop records to Sentinel AI SIEM using triggers.",
+        "tags": [
+            {
+                "name": "repo",
+                "link": "https://github.com/gcastill0-s1/project-01"
+            }
+            ,
+            {
+                "name": "Data Generator",
+                "link": "https://github.com/gcastill0-s1/project-01/tree/main/eventgen"
+            }
+        ]
+    },
+    {
+        "id": "hcp-vault",
         "avatar": "img/vault_logo.svg",
         "title": "HCP Vault Hub & Spoke",
         "date": "Jan 2022",
