@@ -8,12 +8,12 @@ const projects = [
         "tags": [
             {
                 "name": "repo",
-                "link": "https://github.com/gcastill0-s1/project-01"
+                "link": "https://github.com/gcastill0/project-01-extrahop"
             }
             ,
             {
                 "name": "Data Generator",
-                "link": "https://github.com/gcastill0-s1/project-01/tree/main/eventgen"
+                "link": "https://github.com/gcastill0/project-01-extrahop/tree/main/eventgen"
             }
         ]
     },
